@@ -1,0 +1,10 @@
+﻿*.user
+*.lock.json
+.vscode/
+.vs/
+.nuget/
+packages/
+bin/
+obj/
+out/
+.gitattributes
