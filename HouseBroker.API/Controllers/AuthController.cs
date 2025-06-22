@@ -10,7 +10,6 @@ using System.Text;
 namespace HouseBroker.API.Controllers
 {
     [Route("api/user")]
-    [ApiController]
     public class AuthController : ControllerBase
     {
         private readonly UserManager<ApplicationUser> _userManager;

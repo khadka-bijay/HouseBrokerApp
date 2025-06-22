@@ -1,5 +1,6 @@
 using FluentValidation.AspNetCore;
 using HouseBroker.API;
+using HouseBroker.API.AutoMapper;
 using HouseBroker.Infrastructure;
 using HouseBroker.Infrastructure.Entities;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -42,6 +43,7 @@ builder.Services.AddAuthorization();
 
 builder.Services.AddControllers();
 builder.Services.AddServices();
+builder.Services.AddAutoMapper(typeof(MappingProfile));
 builder.Services.AddFluentValidationAutoValidation();
 
 builder.Services.AddEndpointsApiExplorer();

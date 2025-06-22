@@ -6,4 +6,12 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="ServiceRules\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HouseBroker.Infrastructure\HouseBroker.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
