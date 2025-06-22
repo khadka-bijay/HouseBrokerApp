@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HouseBroker.API.Controllers
@@ -18,6 +19,7 @@ namespace HouseBroker.API.Controllers
             _logger = logger;
         }
 
+        [Authorize(Roles = "Broker")]
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
